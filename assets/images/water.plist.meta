@@ -1,7 +1,12 @@
 {
   "ver": "1.2.0",
+<<<<<<< HEAD
   "uuid": "cb3bd6f1-4676-44ab-b412-e047cf6877f8",
   "rawTextureUuid": "9ec1ee81-f48c-41b2-ba71-668d3a4d3e45",
+=======
+  "uuid": "dd9e4cb9-207d-4891-a355-093914699593",
+  "rawTextureUuid": "ae4a5de4-91d0-4eaa-a19a-dea14127383e",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
   "size": {
     "width": 32,
     "height": 16
@@ -11,8 +16,13 @@
   "subMetas": {
     "water_01.png": {
       "ver": "1.0.2",
+<<<<<<< HEAD
       "uuid": "2c6f025a-b6e7-47c0-88b4-debc8c185661",
       "rawTextureUuid": "9ec1ee81-f48c-41b2-ba71-668d3a4d3e45",
+=======
+      "uuid": "4b60858c-b34f-49d3-a968-f1f38d6adc81",
+      "rawTextureUuid": "ae4a5de4-91d0-4eaa-a19a-dea14127383e",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -31,8 +41,13 @@
     },
     "water_02.png": {
       "ver": "1.0.2",
+<<<<<<< HEAD
       "uuid": "92d46a4f-f3da-48f0-aeef-fac7ce969dbe",
       "rawTextureUuid": "9ec1ee81-f48c-41b2-ba71-668d3a4d3e45",
+=======
+      "uuid": "d94bcc91-a751-4c62-913d-45a465efa5bb",
+      "rawTextureUuid": "ae4a5de4-91d0-4eaa-a19a-dea14127383e",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,5 +1,9 @@
 {
   "ver": "1.0.0",
+<<<<<<< HEAD
   "uuid": "fa831b19-4149-4988-9a5b-bad2db4b2e12",
+=======
+  "uuid": "7cef24f0-b181-4e6d-9201-9a7dbca6b1e7",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
   "subMetas": {}
 }

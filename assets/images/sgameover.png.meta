@@ -1,14 +1,23 @@
 {
   "ver": "1.0.0",
+<<<<<<< HEAD
   "uuid": "593ce77e-8485-4a19-b4c4-6129655ab2e3",
+=======
+  "uuid": "a712a240-08a9-4ddc-b4da-cd3e6854aa53",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "sgameover": {
       "ver": "1.0.2",
+<<<<<<< HEAD
       "uuid": "2c54dc42-9ba9-4710-a851-4308d799c0eb",
       "rawTextureUuid": "593ce77e-8485-4a19-b4c4-6129655ab2e3",
+=======
+      "uuid": "af6227b9-12f4-477b-8935-569afdcf65f5",
+      "rawTextureUuid": "a712a240-08a9-4ddc-b4da-cd3e6854aa53",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

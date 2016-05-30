@@ -1,14 +1,23 @@
 {
   "ver": "1.0.0",
+<<<<<<< HEAD
   "uuid": "ce4987b9-0e6c-4668-bb26-67db6525bea9",
+=======
+  "uuid": "633cd327-4b48-41d0-871b-fc731b045f29",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "bore": {
       "ver": "1.0.2",
+<<<<<<< HEAD
       "uuid": "e456a0fe-8792-45d8-92ce-1761e8d1c518",
       "rawTextureUuid": "ce4987b9-0e6c-4668-bb26-67db6525bea9",
+=======
+      "uuid": "e8aa2b28-99bf-4333-a81a-dd484a796c58",
+      "rawTextureUuid": "633cd327-4b48-41d0-871b-fc731b045f29",
+>>>>>>> c93833050b70c0aa77e02ae0cef83c6f60b98e4c
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
