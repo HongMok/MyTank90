@@ -1,0 +1,53 @@
+{
+  "ver": "1.2.0",
+  "uuid": "47b39b20-3526-4235-8059-1adbe6f5b8cb",
+  "rawTextureUuid": "1492586c-1acd-4442-b3db-6aaf1fb0e809",
+  "size": {
+    "width": 64,
+    "height": 32
+  },
+  "type": "Texture Packer",
+  "rawTextureUrl": "db://assets/images/shield.png",
+  "subMetas": {
+    "shield_01.png": {
+      "ver": "1.0.2",
+      "uuid": "b618dbad-6d95-414c-91cc-e258df947168",
+      "rawTextureUuid": "1492586c-1acd-4442-b3db-6aaf1fb0e809",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 32,
+      "height": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    },
+    "shield_02.png": {
+      "ver": "1.0.2",
+      "uuid": "0463eabd-5043-488f-b926-a15f26e3c16f",
+      "rawTextureUuid": "1492586c-1acd-4442-b3db-6aaf1fb0e809",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 32,
+      "trimY": 0,
+      "width": 32,
+      "height": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}

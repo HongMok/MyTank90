@@ -1,0 +1,53 @@
+{
+  "ver": "1.2.0",
+  "uuid": "cb3bd6f1-4676-44ab-b412-e047cf6877f8",
+  "rawTextureUuid": "9ec1ee81-f48c-41b2-ba71-668d3a4d3e45",
+  "size": {
+    "width": 32,
+    "height": 16
+  },
+  "type": "Texture Packer",
+  "rawTextureUrl": "db://assets/images/water.png",
+  "subMetas": {
+    "water_01.png": {
+      "ver": "1.0.2",
+      "uuid": "2c6f025a-b6e7-47c0-88b4-debc8c185661",
+      "rawTextureUuid": "9ec1ee81-f48c-41b2-ba71-668d3a4d3e45",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 16,
+      "height": 16,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    },
+    "water_02.png": {
+      "ver": "1.0.2",
+      "uuid": "92d46a4f-f3da-48f0-aeef-fac7ce969dbe",
+      "rawTextureUuid": "9ec1ee81-f48c-41b2-ba71-668d3a4d3e45",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 16,
+      "trimY": 0,
+      "width": 16,
+      "height": 16,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}
