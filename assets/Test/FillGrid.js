@@ -9,6 +9,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        
         for( var i = 0; i < this.num; i++ ){
             var item = cc.instantiate( this.itemPrefab );
             this.node.addChild( item );
