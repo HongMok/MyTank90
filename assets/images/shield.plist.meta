@@ -1,5 +1,5 @@
 {
-  "ver": "1.2.0",
+  "ver": "1.2.4",
   "uuid": "6295b0cd-8a8c-475e-a368-8d0f96e4be4d",
   "rawTextureUuid": "bafbd979-eae5-4463-bf3d-50faaeb82d57",
   "size": {
@@ -7,10 +7,9 @@
     "height": 32
   },
   "type": "Texture Packer",
-  "rawTextureUrl": "db://assets/images/shield.png",
   "subMetas": {
     "shield_01.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "6fb71372-889a-4c02-a88b-0474d96a57fb",
       "rawTextureUuid": "bafbd979-eae5-4463-bf3d-50faaeb82d57",
       "trimType": "auto",
@@ -22,6 +21,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -30,7 +31,7 @@
       "subMetas": {}
     },
     "shield_02.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "19ef7191-e262-4a8a-81a7-388bf1c27619",
       "rawTextureUuid": "bafbd979-eae5-4463-bf3d-50faaeb82d57",
       "trimType": "auto",
@@ -42,6 +43,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

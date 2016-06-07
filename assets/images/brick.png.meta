@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "brick": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "e01b93e7-cb6d-451c-ab73-eef2eefd3c8e",
       "rawTextureUuid": "4daadab4-997f-4856-badb-01eb0b0affa4",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 0,
       "width": 16,
       "height": 16,
+      "rawWidth": 16,
+      "rawHeight": 16,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

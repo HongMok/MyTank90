@@ -12,11 +12,18 @@ cc.Class({
         smallRowPrefab: cc.Prefab,
         smallColPrefab: cc.Prefab,
         smallOffset: 0,
-        smallNum: 0
+        smallNum: 0,
+
+        isDrawLine: true
     },
 
     // use this for initialization
     onLoad: function () {
+
+        if( this.isDrawLine == false ){
+            return ;
+        }
+
         var i = 0;
         
         for( i = 0; i < this.smallNum; i++ ){
@@ -49,7 +56,7 @@ cc.Class({
         
         
         
-        this.node.scaleX = this.node.scaleY = 1.5;
+        //this.node.scaleX = this.node.scaleY = 1.5;
     }
 
 });

@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "enemy": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "aa00c6d6-4da6-448a-86b1-23ce3461b854",
       "rawTextureUuid": "0fbd7b61-7dce-4533-a066-fc7408817f4c",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 4,
       "width": 402,
       "height": 232,
+      "rawWidth": 410,
+      "rawHeight": 240,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

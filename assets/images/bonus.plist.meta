@@ -1,5 +1,5 @@
 {
-  "ver": "1.2.0",
+  "ver": "1.2.4",
   "uuid": "97ffdeb8-9b14-4079-9959-8682f6f23526",
   "rawTextureUuid": "e9b7e352-833c-4e7c-bccf-2d8128119caf",
   "size": {
@@ -7,10 +7,9 @@
     "height": 32
   },
   "type": "Texture Packer",
-  "rawTextureUrl": "db://assets/images/bonus.png",
   "subMetas": {
     "bonus_01.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "c3c709a7-779f-4adc-ae7b-2e4203f0dfce",
       "rawTextureUuid": "e9b7e352-833c-4e7c-bccf-2d8128119caf",
       "trimType": "auto",
@@ -22,6 +21,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -30,7 +31,7 @@
       "subMetas": {}
     },
     "bonus_02.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5fe538da-ec7e-4293-8da7-8e9a2e5a99a1",
       "rawTextureUuid": "e9b7e352-833c-4e7c-bccf-2d8128119caf",
       "trimType": "auto",
@@ -42,6 +43,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -50,7 +53,7 @@
       "subMetas": {}
     },
     "bonus_03.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "2d20e494-93a2-4b17-b3cc-e30ac6ca009f",
       "rawTextureUuid": "e9b7e352-833c-4e7c-bccf-2d8128119caf",
       "trimType": "auto",
@@ -62,6 +65,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -70,7 +75,7 @@
       "subMetas": {}
     },
     "bonus_04.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "436ed1f4-5a80-47b1-9971-c54bc86aef28",
       "rawTextureUuid": "e9b7e352-833c-4e7c-bccf-2d8128119caf",
       "trimType": "auto",
@@ -82,6 +87,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -90,7 +97,7 @@
       "subMetas": {}
     },
     "bonus_05.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "14816fe0-fd69-4554-b37c-f8405ada9388",
       "rawTextureUuid": "e9b7e352-833c-4e7c-bccf-2d8128119caf",
       "trimType": "auto",
@@ -102,6 +109,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -110,7 +119,7 @@
       "subMetas": {}
     },
     "bonus_06.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "02f74fbf-f670-44f2-96f6-ed51b0d8f08a",
       "rawTextureUuid": "e9b7e352-833c-4e7c-bccf-2d8128119caf",
       "trimType": "auto",
@@ -122,6 +131,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

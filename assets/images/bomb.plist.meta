@@ -1,5 +1,5 @@
 {
-  "ver": "1.2.0",
+  "ver": "1.2.4",
   "uuid": "cf5d91e6-4714-403b-a282-4c6e07931d51",
   "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
   "size": {
@@ -7,10 +7,9 @@
     "height": 64
   },
   "type": "Texture Packer",
-  "rawTextureUrl": "db://assets/images/bomb.png",
   "subMetas": {
     "bulletbomb_01.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "dc1a8b2d-874a-4b71-80fd-9cdd6beaa848",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -22,6 +21,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -30,7 +31,7 @@
       "subMetas": {}
     },
     "bulletbomb_02.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "94d62f43-3596-483c-a61f-b58233f6bdb2",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -42,6 +43,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -50,7 +53,7 @@
       "subMetas": {}
     },
     "bulletbomb_03.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "7cef1bee-331e-4bb6-994d-e2b7aed531f8",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -62,6 +65,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -70,7 +75,7 @@
       "subMetas": {}
     },
     "tankbomb_01.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "af33a0d7-45ff-4307-b3ff-fdde44bcd78d",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -82,6 +87,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -90,7 +97,7 @@
       "subMetas": {}
     },
     "tankbomb_02.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "b9d1b0d4-7aba-4f7d-a3b5-eef78b646ab2",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -102,6 +109,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -110,7 +119,7 @@
       "subMetas": {}
     },
     "tankbomb_03.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "e3bae74d-e829-4aa0-a54a-ef484d59419e",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -122,6 +131,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -130,7 +141,7 @@
       "subMetas": {}
     },
     "tankbomb_04.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "776b93ee-ea38-4a84-8a1f-e4309c0cff7f",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -142,6 +153,8 @@
       "trimY": 0,
       "width": 64,
       "height": 64,
+      "rawWidth": 64,
+      "rawHeight": 64,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -150,7 +163,7 @@
       "subMetas": {}
     },
     "tankbomb_05.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5452ba35-b233-4b74-bc5f-5af58b20ebd9",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -162,6 +175,8 @@
       "trimY": 0,
       "width": 64,
       "height": 64,
+      "rawWidth": 64,
+      "rawHeight": 64,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -170,7 +185,7 @@
       "subMetas": {}
     },
     "tankbomb_06.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "64581621-38f3-4522-b5d1-5c61e527bde9",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -182,6 +197,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -190,7 +207,7 @@
       "subMetas": {}
     },
     "tankbomb_07.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "6df26ef5-b5aa-4cd2-8555-0c81f8aede2c",
       "rawTextureUuid": "2b5916f3-ac56-47df-a4f1-cc0d1d83d86b",
       "trimType": "auto",
@@ -202,6 +219,8 @@
       "trimY": 0,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

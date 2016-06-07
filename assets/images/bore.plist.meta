@@ -1,5 +1,5 @@
 {
-  "ver": "1.2.0",
+  "ver": "1.2.4",
   "uuid": "c0cbfde5-7010-47e4-b79b-bb64357e7613",
   "rawTextureUuid": "0628e294-f29d-4fb1-b200-9db383c97abd",
   "size": {
@@ -7,10 +7,9 @@
     "height": 36
   },
   "type": "Texture Packer",
-  "rawTextureUrl": "db://assets/images/bore.png",
   "subMetas": {
     "bore_01.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "4213fb14-5323-4a6d-b655-3a3d0cbc612b",
       "rawTextureUuid": "0628e294-f29d-4fb1-b200-9db383c97abd",
       "trimType": "auto",
@@ -22,6 +21,8 @@
       "trimY": 2,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -30,7 +31,7 @@
       "subMetas": {}
     },
     "bore_02.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "85d29b94-5f34-48eb-816f-4d07910183bb",
       "rawTextureUuid": "0628e294-f29d-4fb1-b200-9db383c97abd",
       "trimType": "auto",
@@ -42,6 +43,8 @@
       "trimY": 2,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -50,7 +53,7 @@
       "subMetas": {}
     },
     "bore_03.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5002f2f6-3371-49f0-bf63-56636ce34fc8",
       "rawTextureUuid": "0628e294-f29d-4fb1-b200-9db383c97abd",
       "trimType": "auto",
@@ -62,6 +65,8 @@
       "trimY": 2,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -70,7 +75,7 @@
       "subMetas": {}
     },
     "bore_04.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "705d1dd2-fe61-48da-bef2-da2e0c7b2a11",
       "rawTextureUuid": "0628e294-f29d-4fb1-b200-9db383c97abd",
       "trimType": "auto",
@@ -82,6 +87,8 @@
       "trimY": 2,
       "width": 32,
       "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
