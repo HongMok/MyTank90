@@ -22,7 +22,13 @@ module.exports = {
 
     StartOrPause: cc.KEY.h,
     Select: cc.KEY.tab,
-    Exit: cc.KEY.escape
+    Exit: cc.KEY.escape,
+
+
+    Dir_Up: 1,
+    Dir_Right: 2,
+    Dir_Down: 3,
+    Dir_Left: 4
 
 
 };
