@@ -4,6 +4,9 @@ var TankConfig = require('TankConfig');
 
 const MovingOffset = 5;
 
+const AniBore = "aniBore";
+const AniBomb = "aniTankBomb";
+
 cc.Class({
     extends: SpriteComponent,
 
@@ -11,11 +14,12 @@ cc.Class({
         tankLevelId: 1,
         currLifeIndex: 0,
         dir: 1,
-        isMoving: true
+        isMoving: false,
+        isInvincible: false
     },
 
     onLoad: function () {
-
+        this.aniCtl = this.node.getComponent( cc.Animation );
     },
 
     init: function(){
@@ -26,6 +30,27 @@ cc.Class({
         this.sprite = this.node.getComponent( cc.Sprite );
         this.movingCount = 0;
         this.moveAndColorIndex = 0;
+
+        //this.endMvBore();
+        //this.endMvBomb();
+    },
+
+    playMvBomb: function(){
+        this.aniCtl.play( AniBomb, 0 );
+    },
+
+    endMvBomb: function(){
+        this.aniCtl.stop( AniBomb );
+    },
+
+    playMvBore: function(){
+        this.isInvincible = true;
+        this.aniCtl.play( AniBore, 0 );
+    },
+
+    endMvBore: function(){
+        this.aniCtl.stop( AniBore );
+        this.isInvincible = false;
     },
 
     setTankLevelId: function( tankLevelId ){

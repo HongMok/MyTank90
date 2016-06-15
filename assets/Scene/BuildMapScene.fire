@@ -35,9 +35,6 @@
     "_children": [
       {
         "__id__": 2
-      },
-      {
-        "__id__": 26
       }
     ],
     "_localZOrder": 0,
@@ -860,9 +857,6 @@
       "__id__": 2
     },
     "_enabled": true,
-    "assetHelper": {
-      "__id__": 25
-    },
     "container": {
       "__id__": 10
     },
@@ -873,99 +867,5 @@
       "__id__": 11
     },
     "tankTwinkleOffset": 15
-  },
-  {
-    "__type__": "639fcXMwa5IVIXUsSIaKZEs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 26
-    },
-    "_enabled": true,
-    "terrainPrefabs": [
-      {
-        "__uuid__": "5c8b45b5-37fb-4c1d-9bd1-52f6214e4235"
-      },
-      {
-        "__uuid__": "1abb5331-cb29-4ce6-85e8-de878121322a"
-      },
-      {
-        "__uuid__": "6ef006e8-c8ca-43f1-b0fd-233e2d1cdeb6"
-      },
-      {
-        "__uuid__": "92177129-06be-4dde-b4db-a40ed6c6c52e"
-      },
-      {
-        "__uuid__": "03fe1dd7-5f0a-4e53-87bb-1f5b01de0bd0"
-      },
-      {
-        "__uuid__": "07693fe8-7440-40d4-8ccd-033c059eef7b"
-      },
-      {
-        "__uuid__": "48cc5f9a-3c7e-45e1-878e-ef5bd0f9e4bb"
-      },
-      {
-        "__uuid__": "2c23f495-0e6f-4265-ac40-acccfbaed84a"
-      },
-      {
-        "__uuid__": "b0f8c408-4511-41bb-91aa-ed4898a3bcd6"
-      },
-      {
-        "__uuid__": "ddecb2be-058d-484e-9be2-228537763e88"
-      }
-    ]
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "AssetHelper",
-    "_objFlags": 0,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_parent": {
-      "__id__": 1
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_children": [],
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_tag": -1,
-    "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
-    "_id": "d93e8gwOeFIoqDBOwTHGDKB",
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 25
-      }
-    ],
-    "_prefab": null,
-    "groupIndex": 0
   }
 ]

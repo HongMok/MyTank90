@@ -1,10 +1,11 @@
 var TerrainConfig = require('TerrainConfig');
-var AssetHelper = require('AssetHelper');
+//var AssetHelper = require('AssetHelper');
 var TerrainBlockConfig = require('TerrainBlockConfig');
 var TerrainManager = require('TerrainManager');
 var GlobalConfig = require('GlobalConfig');
 var GameHelper = require('GameHelper');
 var MapConfig = require('MapConfig');
+var GlobalData = require('GlobalData');
 
 
 const BlockWidth = 32;
@@ -17,8 +18,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        assetHelper: AssetHelper,
-
         container: cc.Node,
 
         txtMapData: cc.EditBox,
@@ -29,16 +28,17 @@ cc.Class({
     },
 
     onLoad: function () {
+        this.assetHelper = GlobalData.assetHelper;
         this.terrainManger = this.container.addComponent( TerrainManager );
         this.terrainManger.assetHelper = this.assetHelper;
         this.modifyList = {};
         this.currCustomBlockIndex = -1;
         this.isSetting = false;
 
-        this.customBlocks = TerrainBlockConfig.getAllCustomConfig();        //Íæ¼Ò×Ô¶¨ÒåµØÍ¼¿é
+        this.customBlocks = TerrainBlockConfig.getAllCustomConfig();        //ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
 
-        this.xbi = 0;    //Íæ¼Òµ±Ç°¹â±ê£¬x´ó×ø±ê
-        this.ybi = GlobalConfig.MapSize - 1;   //Íæ¼Òµ±Ç°¹â±ê£¬y´ó×ø±ê
+        this.xbi = 0;    //ï¿½ï¿½Òµï¿½Ç°ï¿½ï¿½ê£¬xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        this.ybi = GlobalConfig.MapSize - 1;   //ï¿½ï¿½Òµï¿½Ç°ï¿½ï¿½ê£¬yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         this.refreshTankPos();
 
         this.countTwinkleTank = 0;
@@ -84,6 +84,12 @@ cc.Class({
                     case GlobalConfig.Shoot1:
                         self.changeBlockType();
                         break;
+                    case GlobalConfig.StartOrPause:
+                        self.confirm();
+                        break;
+                    case GlobalConfig.Exit:
+                        self.cancel();
+                        break;
                 }
             },
             onKeyReleased: function( keyCode, event ){
@@ -94,6 +100,22 @@ cc.Class({
                 }
             }
         }, this.node);
+    },
+
+    cancel: function(){
+        GlobalData.customMapData = null;
+
+        this._backMenu();
+    },
+
+    confirm: function(){
+        GlobalData.customMapData = this.txtMapData.string;
+
+        this._backMenu();
+    },
+
+    _backMenu: function(){
+        cc.director.loadScene( 'MenuScene' );
     },
 
     changeBlockType: function(){
@@ -126,7 +148,7 @@ cc.Class({
     setBlock: function( xbi, ybi, blockId ){
         if( this.isInitMap == false ){
             if( xbi === HomeX && ybi === HomeY ){
-                return ;        //²»ÄÜÊÖ¶¯ÐÞ¸Ähome
+                return ;        //ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Þ¸ï¿½home
             }
         }
 
@@ -179,7 +201,7 @@ cc.Class({
             for( j = 0; j < terrainConfig.getSize(); j++ ){
                 logPos = pos + j * GlobalConfig.BlockSize;
                 for( k = 0;k < terrainConfig.getSize(); k++ ){
-                    arrDone.push( logPos + k );         //¿ÉÄÜÕ¼¶à¸öµã
+                    arrDone.push( logPos + k );         //ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½ï¿½
                 }
             }
         }
@@ -220,7 +242,9 @@ cc.Class({
             this.trySetCurrBlock();
         }
         else{
-            this.currCustomBlockIndex--;        //²»ÊÇÉèÖÃµØÍ¼Ê±£¬»»Ò»¸öÎ»ÖÃ£¬»Ö¸´µ½ÉÏÒ»¸öµØÐÎÑù°å
+            if( this.currCustomBlockIndex >= 0 ){
+                this.currCustomBlockIndex--;        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Í¼Ê±ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            }
         }
     },
 
