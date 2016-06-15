@@ -107,12 +107,11 @@
     },
     "_enabled": true,
     "sprite": null,
-    "mvBore": null,
-    "mvTankBomb": null,
     "tankLevelId": 1,
     "currLifeIndex": 0,
     "dir": 1,
-    "isMoving": true,
+    "speed": 30,
+    "isMoving": false,
     "isInvincible": false
   },
   {

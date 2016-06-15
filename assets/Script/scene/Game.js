@@ -18,6 +18,8 @@ cc.Class({
         this.playerNum = GlobalData.playerNum;
         this.customMapData = GlobalData.customMapData;
         this.playerList = [];
+        this.player1 = null;
+        this.player2 = null;
         this.level = 1;
         this.terrainManger = this.terrainContainer.addComponent( TerrainManager );
         this.terrainManger.assetHelper = this.assetHelper;
@@ -37,9 +39,11 @@ cc.Class({
             p.y = 50;
             var tank = p.getComponent( TankComponent );
             tank.setTankLevelId( 1 );
-            tank.playMvBomb();
+            tank.playMvBore();
             this.playerList[i] = tank;
         }
+        this.player1 = this.playerList[ 0 ];
+        this.player2 = this.playerList[ 1 ];
     },
 
     initMap: function() {
@@ -62,17 +66,31 @@ cc.Class({
             onKeyPressed: function( keyCode, event ){
                 switch( keyCode ){
                     case GlobalConfig.Up1:
-                        self.onPressUp1();
+                        self.movePlayerByIndexAndDIr( 0, 1 );
                         break;
                     case GlobalConfig.Down1:
+                        self.movePlayerByIndexAndDIr( 0, 3 );
                         break;
                     case GlobalConfig.Left1:
+                        self.movePlayerByIndexAndDIr( 0, 4 );
                         break;
                     case GlobalConfig.Right1:
+                        self.movePlayerByIndexAndDIr( 0, 2 );
                         break;
                     case GlobalConfig.Up2:
+                        self.movePlayerByIndexAndDIr( 1, 1 );
                         break;
                     case GlobalConfig.Down2:
+                        self.movePlayerByIndexAndDIr( 1, 3 );
+                        break;
+                    case GlobalConfig.Left2:
+                        self.movePlayerByIndexAndDIr( 1, 4 );
+                        break;
+                    case GlobalConfig.Right2:
+                        self.movePlayerByIndexAndDIr( 1, 2 );
+                        break;
+                    case GlobalConfig.Shoot1:
+                        self.shootPlayerByIndex( 0 );
                         break;
                     case GlobalConfig.Exit:
                         self._backMenu();
@@ -81,13 +99,54 @@ cc.Class({
             },
             onKeyReleased: function( keyCode, event ){
                 switch( keyCode ){
+                    case GlobalConfig.Up1:
+                        self.stopPlayerByIndex( 0 );
+                        break;
+                    case GlobalConfig.Down1:
+                        self.stopPlayerByIndex( 0 );
+                        break;
+                    case GlobalConfig.Left1:
+                        self.stopPlayerByIndex( 0 );
+                        break;
+                    case GlobalConfig.Right1:
+                        self.stopPlayerByIndex( 0 );
+                        break;
+                    case GlobalConfig.Up2:
+                        self.stopPlayerByIndex( 1 );
+                        break;
+                    case GlobalConfig.Down2:
+                        self.stopPlayerByIndex( 1 );
+                        break;
+                    case GlobalConfig.Left2:
+                        self.stopPlayerByIndex( 1 );
+                        break;
+                    case GlobalConfig.Right2:
+                        self.stopPlayerByIndex( 1 );
+                        break;
                 }
             }
         }, this.node);
     },
 
-    onPressUp1: function(){
-        this.playerList[0].playMvBomb();
+    shootPlayerByIndex: function( index ){
+        var player = this.playerList[ index ];
+        if( null != player ){
+            player.playMvBomb();
+        }
+    },
+
+    movePlayerByIndexAndDIr: function( index, dir ){
+        var player = this.playerList[ index ];
+        if( null != player ){
+            player.moveWithDir( dir );
+        }
+    },
+
+    stopPlayerByIndex: function( index ){
+        var player = this.playerList[ index ];
+        if( null != player ){
+            player.setIsMoving( false );
+        }
     },
 
     _backMenu: function(){

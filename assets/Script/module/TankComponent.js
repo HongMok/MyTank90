@@ -1,6 +1,7 @@
 var SpriteComponent = require('SpriteComponent');
 var TankLevelConfig = require('TankLevelConfig');
 var TankConfig = require('TankConfig');
+var GlobalConfig = require('GlobalConfig');
 
 const MovingOffset = 5;
 
@@ -14,18 +15,24 @@ cc.Class({
         tankLevelId: 1,
         currLifeIndex: 0,
         dir: 1,
+        speed: 30,
         isMoving: false,
         isInvincible: false
     },
 
     onLoad: function () {
         this.aniCtl = this.node.getComponent( cc.Animation );
+
+        this.minPos = GlobalConfig.BlockWidth / 2;
+        this.maxPos = GlobalConfig.BlockWidth * GlobalConfig.MapSize - this.minPos;
     },
 
     init: function(){
         if( null != this.sprite ){
             return ;
         }
+
+        this.isMoving = false;
 
         this.sprite = this.node.getComponent( cc.Sprite );
         this.movingCount = 0;
@@ -41,6 +48,8 @@ cc.Class({
 
     endMvBomb: function(){
         this.aniCtl.stop( AniBomb );
+
+        this.refreshFrame();
     },
 
     playMvBore: function(){
@@ -51,6 +60,8 @@ cc.Class({
     endMvBore: function(){
         this.aniCtl.stop( AniBore );
         this.isInvincible = false;
+
+        this.setDir( this.dir );
     },
 
     setTankLevelId: function( tankLevelId ){
@@ -96,7 +107,13 @@ cc.Class({
         this.refreshFrame();
     },
 
+    moveWithDir: function( dir ){
+        this.setDir( dir );
+        this.setIsMoving( true );
+    },
+
     setDir: function( dir ){
+        this._resetTankPosWhenDir( this.dir, dir );
         this.dir = dir;
         this.refreshFrame();
     },
@@ -119,6 +136,40 @@ cc.Class({
             this.movingCount = 0;
             this._changeMovingFrame();
         }
+
+        var move = this.speed * dt;
+        switch( this.dir ){
+            case 1:
+                this.node.y += move;
+                break;
+            case 2:
+                this.node.x += move;
+                break;
+            case 3:
+                this.node.y -= move;
+                break;
+            case 4:
+                this.node.x -= move;
+                break;
+        }
+
+        this._checkOutSide();
+    },
+
+    _checkOutSide: function(){
+        //出界判断
+        if( this.node.x < this.minPos ){
+            this.node.x = this.minPos;
+        }
+        if( this.node.x > this.maxPos ){
+            this.node.x = this.maxPos;
+        }
+        if( this.node.y < this.minPos ){
+            this.node.y = this.minPos;
+        }
+        if( this.node.y > this.maxPos ){
+            this.node.y = this.maxPos;
+        }
     },
 
     _changeMovingFrame: function(){
@@ -140,5 +191,35 @@ cc.Class({
                 this.tankConfig.getLevel() + "_" +
                 this.dir + "_" +
                 this.moveAndColorList[ this.moveAndColorIndex ];
+    },
+
+    /**
+     * 变向时，要把tank放回 16 * n 的轨道上
+     * */
+    _resetTankPosWhenDir: function( oldDir, newDir ){
+        var res = oldDir - newDir;
+        if( res == 0 || res == 2 || res == -2 ){
+            return ;        //同一轨道
+        }
+
+        var num ;
+        var offset;
+        var halfWidth = GlobalConfig.BlockWidth / 2;
+        if( oldDir == 2 || oldDir == 4 ){
+            num = parseInt( this.node.x / halfWidth );
+            offset = this.node.x % halfWidth;
+            if( offset > ( halfWidth / 2 ) ){
+                num += 1;
+            }
+            this.node.x = num * halfWidth;  //reset x
+        }
+        else{
+            num = parseInt( this.node.y / halfWidth );
+            offset = this.node.y % halfWidth;
+            if( offset > ( halfWidth / 2 ) ){
+                num += 1;
+            }
+            this.node.y = num * halfWidth;  //reset y
+        }
     }
 });
